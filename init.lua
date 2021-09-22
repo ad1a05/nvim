@@ -141,6 +141,7 @@ vim.cmd('set wildmenu')
 vim.cmd('set ruler')
 vim.cmd('set showcmd')
 vim.cmd('set hidden')
+vim.cmd('set signcolumn=yes')
 
 vim.api.nvim_set_keymap('i', '<C-a>', '<Home>', { noremap=true })
 vim.api.nvim_set_keymap('i', '<C-e>', '<End>', { noremap=true })
