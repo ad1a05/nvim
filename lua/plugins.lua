@@ -31,6 +31,12 @@ return require('packer').startup(function()
   -- lsp
   use 'neovim/nvim-lspconfig'
 
+  -- treesitter
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+
   -- completion
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
